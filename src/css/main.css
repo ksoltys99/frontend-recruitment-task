@@ -83,6 +83,10 @@ body{
 .close-modal::after{
     content: "\00d7";
     display: inline-block;
+    transform: scale(1.5);
+}
+.close-modal:hover, button:hover{
+    cursor: pointer;
 }
 
 @media screen and (max-width: 700px){
@@ -96,5 +100,8 @@ body{
     }
     .image-container{
         height: 60vw;
+    }
+    #modal{
+        width: 90%;
     }
 }
