@@ -27,7 +27,7 @@ const showClearButton = () => {
 }
 
 const updateCounterText = (value) => {
-    document.querySelector('.click-counter-info').innerHTML = `You have clicked <b>${value} ${value === 1 ? `time` : `times`}</b> to related button`;
+    document.querySelector('.click-counter-info').innerHTML = `You have clicked <b>${value} ${value == 1 ? `time` : `times`}</b> to related button`;
 }
 
 showPopupBtn.addEventListener('click', () => {
