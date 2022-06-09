@@ -29,7 +29,7 @@ body{
 }
 
 .info-container{
-    width: 20vw;
+    width: 25vw;
     font-size: 1rem;
 }
 
@@ -42,6 +42,8 @@ body{
     background: #E4C1AE;
     border: none;
     border-radius: 32px;
+    width: 128px;
+    height: 48px;
 }
 
 #modal{
@@ -56,8 +58,26 @@ body{
     margin: 0;
 }
 
+.clear-button{
+    background: #e63131;
+    border: none;
+    border-radius: 32px;
+    width: 128px;
+    height: 48px;
+}
+
+.invisible{
+    opacity: 0;
+    pointer-events: none;
+}
+
 @media screen and (max-width: 700px){
     .main-container{
         flex-direction: column;
+        margin: 5% 5% 0 5%;
+    }
+
+    .info-container, .image-container{
+        width: 90%;
     }
 }
